@@ -1,0 +1,15 @@
+Let w = w1 w2 w3 .... wn
+  and w0 = w, wn+1 = phi
+//initialization step
+for i := 1 to n do
+  for all rules A -> wi do
+    chart[i,i] := [A]
+//Recursive step
+for j:= 2 to n do
+  for i:= 1 to n-j+1 do
+    begin
+      chart[i,j := phi
+      for k := i to j-1 do
+        chart[i,j] := chart[i,j] U {A->BC is a production and B(- chart[i,k] and C (- chart[k+1,j]}
+    end
+if S (- chart[1,n] then accept else reject
